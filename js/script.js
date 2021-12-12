@@ -12,8 +12,9 @@ function getComputerName(argMoveId) {
     return "papier";
   } else if (argMoveId == 3) {
     return "nozyce";
+  } else {
+    console.log("Nie znam ruchu o id " + argMoveId + ".");
   }
-  console.log("Nie znam ruchu o id " + argMoveId + ".");
   return "nieznany ruch";
 }
 console.log("Computer wpisał: " + computerMove);
@@ -29,8 +30,10 @@ function getPlayerMove(argMoveId) {
     return "papier";
   } else if (argMoveId == 3) {
     return "nozyce";
+  } else {
+    console.log("Nie znam ruchu o id " + argMoveId + ".");
   }
-//   console.log("Nie znam ruchu o id " + argMoveId + ".");
+//   printMessage("Nie znam ruchu o id " + argMoveId + ".");
   return "nieznany ruch";
 }
 console.log("Gracz wpisał: " + playerMove);
@@ -50,10 +53,11 @@ function displayResult(argComputerMove, argPlayerMove) {
     console.log("Robot WIN");
   } else if (argComputerMove == argPlayerMove) {
     console.log("Draw");
+  } else{
+    console.log(argComputerMove + ' albo ' + argPlayerMove + ' nie jest poprawno podany.')
   }
 }
 
-getPlayerMove();
 displayResult(computerMove, playerMove);
 
 
