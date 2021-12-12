@@ -54,7 +54,7 @@ function displayResult(argComputerMove, argPlayerMove) {
   } else if (argComputerMove == argPlayerMove) {
     console.log("Draw");
   } else{
-    console.log(argComputerMove + ' albo ' + argPlayerMove + ' nie jest poprawno podany.')
+    console.log(argComputerMove + ' albo ' + argPlayerMove + ' nie jest poprawno podany.');
   }
 }
 
@@ -109,6 +109,8 @@ displayResult(computerMove, playerMove);
 //     console.log('Robot WIN');
 // } else if(computerMove == playerMove){
 //     console.log('Draw');
+// } else {
+//     console.log(computerMove + ' albo ' + playerMove + ' nie jest poprawno podany.');
 // }
 
 // myCode_________
@@ -122,6 +124,8 @@ displayResult(computerMove, playerMove);
 //     console.log('Robot WIN');
 // } else if(computerMove == playerMove){
 //     console.log('Draw');
+// } else {
+//   console.log(computerMove + ' albo ' + playerMove + ' nie jest poprawno podany.');
 // }
 
 // anotherOneCode
@@ -132,4 +136,6 @@ displayResult(computerMove, playerMove);
 
 // } else if(randomNumber = playerInput){
 
+// } else {
+//    
 // }
