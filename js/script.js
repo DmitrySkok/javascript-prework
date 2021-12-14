@@ -23,7 +23,7 @@ function playGame(playerInput) {
   // let playerInput = prompt(
   //   "Wybierz swoj ruch! 1: kamien, 2: papier, 3: nozyce."
   // );
-  
+  // let playerInput = 2;
   let playerMove = getPlayerMove(playerInput);
 
   function getPlayerMove(argMoveId) {
@@ -63,11 +63,11 @@ function playGame(playerInput) {
   displayResult(computerMove, playerMove);
 }
 
-document.getElementById('rock').addEventListener('click', playGame(1));
+document.getElementById('rock').addEventListener('click', function(){playGame(1)});
 
-document.getElementById('paper').addEventListener('click', playGame(2));
+document.getElementById('paper').addEventListener('click', function(){playGame(2)});
 
-document.getElementById('scissors').addEventListener('click', playGame(3));
+document.getElementById('scissors').addEventListener('click', function(){playGame(3)});
 
 
 // let playerInput = prompt("Wybierz swoj ruch! 1: kamien, 2: papier, 3: nozyce.");
